@@ -49,8 +49,6 @@ dnf -y copr disable ublue-os/packages
 dnf -y install --enablerepo="copr:copr.fedorainfracloud.org:ublue-os:packages" --setopt=install_weak_deps=False \
     ublue-os-libvirt-workarounds
 
-dnf -y install https://github.com/fastfetch-cli/fastfetch/releases/download/2.50.2/fastfetch-linux-amd64.rpm
-
 dnf -y install NetworkManager-wifi \
     atheros-firmware \
     brcmfmac-firmware \
