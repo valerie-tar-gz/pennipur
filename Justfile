@@ -1,4 +1,4 @@
-image := env("IMAGE_FULL", "ghcr.io/valerie-tar-gz/zirconium:latest")
+image := env("IMAGE_FULL", "ghcr.io/valerie-tar-gz/pennipur:latest")
 
 iso $image=image:
     #!/usr/bin/env bash
