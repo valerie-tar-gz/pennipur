@@ -35,7 +35,12 @@ dnf -y install --setopt=install_weak_deps=False \
   systemd-resolved \
   udisks2-lvm2 \
   virt-install \
-  xdg-user-dirs
+  xdg-user-dirs \
+  wget \
+  mesa-vulkan-drivers \
+  vulkan-headers \
+  vulkan-loader \
+  vulkan-tools
 
 systemctl enable firewalld
 
