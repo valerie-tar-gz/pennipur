@@ -11,4 +11,6 @@ RUN --mount=type=tmpfs,dst=/var \
     --mount=type=bind,from=ctx,source=/,dst=/tmp/build-scripts \
     /tmp/build-scripts/build.sh
 
+RUN dnf upgrade *kernel*
+
 RUN rm -rf /var/* && bootc container lint --fatal-warnings
